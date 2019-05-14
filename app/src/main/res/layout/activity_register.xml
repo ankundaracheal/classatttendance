@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missed The Lecture" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:hint="Enter the reason" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lecturer Missed" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lecture Cancelled" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E00A0A"
+                android:onClick="toHome"
+
+                android:text="Missed"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="Attended The Lecture" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:onClick="toHome"
+                android:text="Attended"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
